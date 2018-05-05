@@ -1,0 +1,55 @@
+object PreviewDialog: TPreviewDialog
+  Left = 290
+  Height = 284
+  Top = 280
+  Width = 284
+  BorderIcons = []
+  Caption = 'TSignalStrength Preview'
+  ClientHeight = 284
+  ClientWidth = 284
+  FormStyle = fsStayOnTop
+  OnCreate = FormCreate
+  OnResize = FormResize
+  Position = poMainFormCenter
+  LCLVersion = '1.8.2.0'
+  Visible = True
+  object PanelPreview: TPanel
+    Left = 100
+    Height = 84
+    Top = 100
+    Width = 84
+    Align = alClient
+    BorderSpacing.Around = 100
+    BorderSpacing.InnerBorder = 10
+    BevelOuter = bvLowered
+    Color = clBlack
+    Constraints.MinHeight = 12
+    Constraints.MinWidth = 12
+    ParentColor = False
+    TabOrder = 0
+  end
+  object LabelSize: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 64
+    AutoSize = False
+    Caption = 'wxh'
+    Font.Color = clMaroon
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object TrackBarLevel: TTrackBar
+    Left = 64
+    Height = 25
+    Top = 216
+    Width = 152
+    Frequency = 10
+    Max = 100
+    OnChange = TrackBarLevelChange
+    Position = 0
+    Anchors = [akLeft, akRight, akBottom]
+    TabOrder = 1
+  end
+end

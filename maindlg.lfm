@@ -1,0 +1,210 @@
+object MainDialog: TMainDialog
+  Left = 703
+  Height = 192
+  Top = 138
+  Width = 336
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'TSignalStrength Configurator'
+  ClientHeight = 192
+  ClientWidth = 336
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.8.2.0'
+  object GroupBoxLevel: TGroupBox
+    Left = 8
+    Height = 112
+    Top = 8
+    Width = 169
+    Caption = 'Level'
+    ClientHeight = 92
+    ClientWidth = 165
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 30
+      Caption = 'Level:'
+      ParentColor = False
+    end
+    object EditLevel: TEdit
+      Left = 72
+      Height = 23
+      Top = 5
+      Width = 80
+      OnKeyDown = EditLevelKeyDown
+      TabOrder = 0
+    end
+    object Label2: TLabel
+      Left = 8
+      Height = 15
+      Top = 36
+      Width = 54
+      Caption = 'Min Level:'
+      ParentColor = False
+    end
+    object EditMinLevel: TEdit
+      Left = 72
+      Height = 23
+      Top = 33
+      Width = 80
+      OnKeyDown = EditMinLevelKeyDown
+      TabOrder = 1
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 15
+      Top = 67
+      Width = 55
+      Caption = 'Max Level.'
+      ParentColor = False
+    end
+    object EditMaxLevel: TEdit
+      Left = 72
+      Height = 23
+      Top = 64
+      Width = 80
+      OnKeyDown = EditMaxLevelKeyDown
+      TabOrder = 2
+    end
+  end
+  object GroupBoxBars: TGroupBox
+    Left = 184
+    Height = 112
+    Top = 8
+    Width = 144
+    Caption = 'Bars'
+    ClientHeight = 92
+    ClientWidth = 140
+    TabOrder = 1
+    object Label4: TLabel
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 56
+      Caption = 'Bar Count:'
+      ParentColor = False
+    end
+    object EditBarCount: TEdit
+      Left = 88
+      Height = 23
+      Top = 5
+      Width = 48
+      OnChange = EditBarCountChange
+      OnKeyDown = EditBarCountKeyDown
+      TabOrder = 0
+    end
+    object Label5: TLabel
+      Left = 8
+      Height = 15
+      Top = 36
+      Width = 67
+      Caption = 'Bright Color:'
+      ParentColor = False
+    end
+    object PanelBrightColor: TPanel
+      Left = 88
+      Height = 20
+      Top = 34
+      Width = 48
+      BevelOuter = bvLowered
+      TabOrder = 1
+      OnClick = PanelBrightColorClick
+    end
+    object Label6: TLabel
+      Left = 8
+      Height = 15
+      Top = 64
+      Width = 59
+      Caption = 'Dark Color:'
+      ParentColor = False
+    end
+    object PanelDarkColor: TPanel
+      Left = 88
+      Height = 20
+      Top = 62
+      Width = 48
+      BevelOuter = bvLowered
+      TabOrder = 2
+      OnClick = PanelDarkColorClick
+    end
+  end
+  object GroupBoxLayout: TGroupBox
+    Left = 8
+    Height = 56
+    Top = 128
+    Width = 320
+    Caption = 'Layout'
+    ClientHeight = 36
+    ClientWidth = 316
+    TabOrder = 2
+    object Label7: TLabel
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 47
+      Caption = 'Gap Size:'
+      ParentColor = False
+    end
+    object EditGapSize: TEdit
+      Left = 72
+      Height = 23
+      Top = 5
+      Width = 32
+      OnKeyDown = EditGapSizeKeyDown
+      TabOrder = 0
+    end
+    object Label8: TLabel
+      Left = 112
+      Height = 15
+      Top = 8
+      Width = 12
+      Caption = 'px'
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 184
+      Height = 15
+      Top = 8
+      Width = 67
+      Caption = 'Background:'
+      ParentColor = False
+    end
+    object PanelBackground: TPanel
+      Left = 264
+      Height = 20
+      Top = 5
+      Width = 48
+      BevelOuter = bvLowered
+      TabOrder = 1
+      OnClick = PanelBackgroundClick
+    end
+  end
+  object ColorDialog: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 136
+    top = 48
+  end
+end
