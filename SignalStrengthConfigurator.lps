@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="11">
+    <Units Count="13">
       <Unit0>
         <Filename Value="SignalStrengthConfigurator.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -21,7 +21,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MainDlg"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="98"/>
         <CursorPos Y="114"/>
         <UsageCount Value="26"/>
@@ -35,7 +34,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="PreviewDlg"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="11"/>
         <TopLine Value="35"/>
         <CursorPos X="25" Y="61"/>
         <UsageCount Value="26"/>
@@ -45,7 +44,7 @@
       <Unit3>
         <Filename Value="..\ATOMEK.Controls\controls.signalstrength.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="49"/>
         <CursorPos X="3" Y="27"/>
         <UsageCount Value="26"/>
@@ -54,7 +53,7 @@
       <Unit4>
         <Filename Value="D:\Programme\Lazarus\lcl\lclclasses.pp"/>
         <UnitName Value="LCLClasses"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="114"/>
         <CursorPos Y="136"/>
         <UsageCount Value="13"/>
@@ -62,7 +61,7 @@
       </Unit4>
       <Unit5>
         <Filename Value="D:\Programme\Lazarus\lcl\include\control.inc"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="2079"/>
         <CursorPos Y="2104"/>
         <UsageCount Value="13"/>
@@ -71,7 +70,7 @@
       <Unit6>
         <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
         <UnitName Value="Controls.SegmentDisplay"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="2"/>
         <CursorPos Y="31"/>
         <UsageCount Value="13"/>
@@ -80,7 +79,7 @@
       <Unit7>
         <Filename Value="..\ATOMEK.Controls\types.led.pas"/>
         <UnitName Value="Types.Led"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="34"/>
         <CursorPos X="3" Y="31"/>
         <UsageCount Value="13"/>
@@ -89,7 +88,7 @@
       <Unit8>
         <Filename Value="..\ATOMEK.Controls\controls.ledmeter.pas"/>
         <UnitName Value="Controls.LedMeter"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="31"/>
         <CursorPos Y="31"/>
         <UsageCount Value="13"/>
@@ -98,17 +97,35 @@
       <Unit9>
         <Filename Value="..\ATOMEK.Controls\graphics.utils.pas"/>
         <UnitName Value="Graphics.Utils"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="8"/>
         <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit9>
       <Unit10>
         <Filename Value="..\ATOMEK.Controls\registerledcontrols.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="6"/>
         <CursorPos X="59" Y="8"/>
         <UsageCount Value="12"/>
         <Loaded Value="True"/>
       </Unit10>
+      <Unit11>
+        <Filename Value="..\ATOMEK.Controls\controls.blinker.pas"/>
+        <UnitName Value="Controls.Blinker"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="6" Y="40"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\ATOMEK.Controls\docs\controls.blinker.xml"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="44" Y="4"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit12>
     </Units>
     <JumpHistory Count="28" HistoryIndex="27">
       <Position1>
