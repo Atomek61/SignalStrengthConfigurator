@@ -90,14 +90,14 @@ end;
 procedure TMainDialog.PanelBrightColorClick(Sender: TObject);
 begin
   if ColorDialog.Execute then begin
-    SignalStrength.BrightColor := ColorDialog.Color;
+    SignalStrength.OnColor := ColorDialog.Color;
   end;
 end;
 
 procedure TMainDialog.PanelDarkColorClick(Sender: TObject);
 begin
   if ColorDialog.Execute then begin
-    SignalStrength.DarkColor := ColorDialog.Color;
+    SignalStrength.OffColor := ColorDialog.Color;
   end;
 end;
 
@@ -107,8 +107,8 @@ begin
   EditMinLevel.Text := Format('%.2f', [SignalStrength.MinLevel]);
   EditMaxLevel.Text := Format('%.2f', [SignalStrength.MaxLevel]);
   EditBarCount.Text := IntToStr(SignalStrength.BarCount);
-  PanelBrightColor.Color := SignalStrength.BrightColor;
-  PanelDarkColor.Color := SignalStrength.DarkColor;
+  PanelBrightColor.Color := SignalStrength.OnColor;
+  PanelDarkColor.Color := SignalStrength.OffColor;
   EditGapSize.Text := IntToStr(SignalStrength.GapSize);
   with SignalStrength do
     PreviewDialog.TrackBarLevel.Position := round(100*Level/(MaxLevel-MinLevel));
